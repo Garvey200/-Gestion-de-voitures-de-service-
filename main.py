@@ -7,4 +7,8 @@ e2=Employe("p129","Nadia","Shafo")
 v1=Voiture("AA123","2025","Toyota",50000)
 v2=Voiture("BB689","2026","BMW",56)
 
+e1.afficher_infos()
+e2.afficher_infos()
 
+v1.afficher_infos()
+v2.afficher_infos()
