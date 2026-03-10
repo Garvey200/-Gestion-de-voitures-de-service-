@@ -12,3 +12,18 @@ class Voiture :
             print("Aucun chauffeur ")
         else:
             print(f"chauffeur: {self.chauffeur.nom},{self.chauffeur.prenom} ")
+
+    def affecter_voiture(self, voiture):
+        if self.voiture_service is None:
+            print(f"Voiture attribuée à : {self.nom}")
+
+        else:
+            print("Cet employé possède deja une voiture.")
+
+    def retirer_voiture(self):
+        if self.voiture_service is not None:
+            print(f"voiture retirée pour, {self.nom}")
+
+        else:
+            print("Cet employé n'a pas de voiture.")
+
