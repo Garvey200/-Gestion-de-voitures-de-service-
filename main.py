@@ -12,3 +12,10 @@ e2.afficher_infos()
 
 v1.afficher_infos()
 v2.afficher_infos()
+
+print("\nAprès affectation : \n ")
+e2.affecter_voiture(v1)
+v1.afficher_infos()
+
+print("\n Après retrait : \n")
+e2.retirer_voiture()
