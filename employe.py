@@ -7,18 +7,24 @@ class Employe:
 
  def afficher_infos(self):
      print(f"Numero Permis: {self.numero_permis}\nNom: {self.nom}\nPrenom: {self.prenom}")
-     if self.voitureService == None:
+     if self.voiture_service == None:
          print("Aucune voiture")
+
+ def affecter_voiture(self, voiture):
+     if self.voiture_service is None:
+         print(f"Voiture attribuée à : {self.nom}")
+
      else:
-         self.voitureService.afficherInformations()
+         print("Cet employé possède deja une voiture.")
+
+ def retirer_voiture(self):
+     if self.voiture_service is not None:
+         print(f"voiture retirée pour, {self.nom}")
+
+     else:
+         print("Cet employé n'a pas de voiture.")
 
 
- def affecterVoiture(self, voiture):
-        if self.voitureService != None:
-            print("Erreur : employe a deja une voiture")
-        elif voiture.chauffeur != None:
-            print("Erreur : voiture deja attribuee")
-        else:
-            self.voitureService = voiture
-            voiture.chauffeur = self
+
+
 
